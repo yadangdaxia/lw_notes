@@ -3,12 +3,13 @@ def titleize(str)
   str.split(/ |\_/).map(&:capitalize).join(" ")
 end
 
+
 beatles = ["john", "ringo", "adam"]
-beatles[2] = "paul" # replaces third member
-beatles[3] = "george" # appends george
-beatles << "new guy" # different way to append.
-beatles [8] = "steve aoki" # adds later (nil assigned for missing elements)
-beatles.insert(0, "yoko") # inserts an element
+beatles[2] = "paul" # Replaces third member
+beatles[3] = "george" # Appends george
+beatles << "new guy" # Different way to append.
+beatles [8] = "steve aoki" # Adds later (nil assigned for missing elements)
+beatles.insert(0, "yoko") # Inserts an element
 beatles.delete_at(6)
 beatles.delete(nil)
 beatles.push("kenny g", "nina simone") # also appends, can add multiple

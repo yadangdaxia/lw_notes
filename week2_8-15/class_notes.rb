@@ -216,7 +216,7 @@ require "open-uri"
 puts "Whats your nickname?"
 nickname = gets.chomp
 
-# API call  
+# API call
 json = open("https://api.github.com/users#{nickname}").read  # json back in form of string
 user = JSON.parse(json)  # json is string from internet, returns user, which is a hash
 
@@ -277,7 +277,3 @@ end
 
 
 poor_calories_counter("Salad", "Big Mac", "Sprite")
-
-
-
-

@@ -1,31 +1,14 @@
-minions = [1, 7, 3, 2]
-
 def sum_odd_indexed(array)
+  sum = 0
   array.each_with_index do |element, index|
     if index.odd?
-      newvar = array.push(index)
-      puts newvar
+      sum += element
     end
   end
+  return sum
 end
-puts "-----"
-sum_odd_indexed(minions)
 
+puts "----EXAMPLE----"
 
-irishmen = [5, 7, 4, 2, 1, 25]
-
-def sum_odd_indexed(array)
-
-  array.each_with_index do |num, index|
-   sum << num if index.odd?
-    newarray << element + 1
-
-  end
-
-  # newarray = array.map do |num, index|
-  #  num + 1
-  # end
-
-  end
-
-  sum_odd_indexed(irishmen)
+minions = [1, 7, 3, 9]
+puts sum_odd_indexed(minions)
