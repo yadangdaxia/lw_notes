@@ -105,7 +105,7 @@ puts fz_members
 
 musicians = ['Jimmy Page', 'Robert Plant', 'John Paul Jones', 'John Bonham']
 musicians.select do |musician|
-  musician[0] == "J" # select only the elements that start with a "J"
+  musician[0] == "J" # Select only the elements that have "J" as the first letter
 end
 
 
@@ -117,6 +117,7 @@ end
 
 musicians = ['Jimmy Page', 'Robert Plant', 'John Paul Jones', 'John Bonham']
 
+# Uses .split to find only "John" names
 musicians.find { |musician| musician.split(' ').first == 'John' }
 
 

@@ -1,0 +1,144 @@
+
+
+
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
+}
+
+ 
+.navigation {
+  height: 80px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+#logo img {
+  float: left;
+  height: 70px;
+  padding: 10px 0px 5px 30px;
+}
+
+.navigation ul {
+  float: right;
+  color: green;
+  font-size: 24px;
+  display: flex;
+  padding: 20px 32px 20px 32px;
+  height: 40px;
+  text-align: center;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a {
+  list-style: 80px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: white;
+
+
+}
+
+.navigation ul li a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  height: 30px;
+}
+
+
+
+
+
+.hero-image {
+  background-image: url("../images/clouds.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+
+
+}
+
+.hero-content {
+  padding-top: 200px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.hero-content h1 {
+  color: red;
+  font-size: 60px;
+}
+
+
+
+
+
+.btn-view {
+  color: black;
+  background-color: white;
+  border: none;
+} 
+
+.btn-view:hover {
+  background-color: red;
+  color: black;
+}
+
+.btn-order {
+  background-color: white;  
+  color: #0F3635;
+  border: none;
+  float: left;
+}
+
+.btn-order:hover {
+  background-color: #0F3635;  
+  color: white;
+  border: none;
+}
+
+
+
+
+
+.product-section {
+  background-color: #ACECEA;
+  margin: 20px;
+}
+
+.product-box {
+  padding: 20px;
+  height: 300px;
+}
+
+.product-description {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.product-description h3 {
+  color: #255F5D;
+}
+
+.price p {
+  font-size: 32px;
+  font-family: "Times New Roman";
+  color: #255F5D;
+  float: left;
+  padding-right: 20px;
+}
+
+.product-image {
+  height: 280px;
+  padding: 20px;
+  float: right;
+}
+

@@ -1,0 +1,304 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+section {
+}
+
+h1 {
+  font-size: 76px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.alert {
+  box-sizing: border-box;
+  position: fixed;
+  font-size: 16px;
+  bottom: 0;
+  border-radius: 0px;
+  background-color: #5D8684; /* #315D5B; */ 
+  color: white;
+  text-align: center;
+  margin: 10px auto 0px auto;
+  width: 100%;
+  }
+
+
+/* NAGIVATION */
+ 
+
+.navigation {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  background: #0F3635;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 650px) {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+}
+
+
+
+
+#logo img {
+  height: 66px;
+  padding: 10px 0px 5px 30px;
+  float: left;
+}
+
+
+#logo h2 {
+  padding: 0px 0px 0px 100px;
+  position: absolute;   
+  text-align: center;
+}
+
+#logo h2 a {
+    text-decoration: none;
+    color: #FFC200;
+    font-size: 34px;
+}
+
+.navigation ul {
+  float: right;
+  font-size: 24px;
+  display: flex;
+  padding: 20px 32px 20px 32px;
+  margin: 0px auto 20px auto;
+  text-align: center;
+  height: 50px;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation ul li a {
+  padding: 3px 10px 4px 10px;
+  margin: auto 10px auto 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  transition-duration: 0.5s;
+
+}
+
+.navigation ul li a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  height: 20px;
+}
+
+.navigation a.active {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  height: 20px;
+}
+
+
+
+
+/* HERO */
+
+
+.hero-image {
+  background-image: url("../images/fern4.png");
+  height: 600px;
+  background-size: cover;
+}
+
+.hero-content {
+  padding-top: 200px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+.hero-content h1 {
+  color: #FFC200;
+  font-size: 80px;
+  font-style: bold;
+}
+
+.hero-content h3 {
+  font-size: 36px;
+  font-style: bold;
+  padding-bottom: 20px;
+}
+
+/* BUTTONS */
+
+
+.btn-view {
+  background-color: white;  
+  color: #0F3635;
+  text-decoration: none;
+  border: none;
+} 
+
+.btn-view:hover {
+  background-color: #0F3635;  
+  color: #FFC200;
+}
+
+.btn-order {
+  background-color: white;  
+  color: #0F3635;
+  width: 120px;
+  border: none;
+}
+
+.btn-order:hover {
+  background-color: #0F3635;  
+  color: #FFC200;
+}
+
+
+
+
+
+/* PRODUCT */
+
+#products {
+  padding-top: 90px;
+  background-color: #90A2A1;
+}
+
+
+.products-container {
+  padding: 0px 30px 5px 30px;
+  margin: 0px auto 0px auto;
+  max-width: 900px;
+  background-color: #90A2A1;
+}
+
+
+/* parent */
+
+.product-box {
+  max-width: 900px;
+  margin: 10px 50px 25px 50px;
+  padding: 10px 15px 10px 15px;
+  background-color: lightgray;
+  display: flex;
+  flex-flow: row;
+}
+
+
+@media (max-width: 900px) {
+  .product-box {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+  }
+}
+
+/* child 1 */
+
+.product-description {
+  text-align: left;
+  padding-bottom: 20px;
+  padding-right: 30px;
+}
+
+.product-description h3 {
+  color: #255F5D;
+}
+
+
+/* child 2 */
+
+.product-price p {
+  font-size: 32px;
+  font-family: "Times New Roman";
+  color: #255F5D;
+  padding-right: 20px;
+  padding-top: 20px; 
+}
+
+
+
+/* child 3 */
+
+.inhaler-image {  
+  float: left;
+  height: 280px;
+  padding: 20px;
+  align-items: center;
+}
+
+
+
+
+
+/* CONTACT */
+
+#contact {
+  background-color: lightgray;
+  padding-bottom: 100px;
+}
+
+.contact-section {
+  padding-top: 50px;
+  display: flex;
+  flex-flow: row; 
+}
+
+
+@media (max-width: 900px) {
+  .contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+  }
+}
+
+.introduction {
+  background-color: #90A2A1;
+  margin: 0px 50px 0px 50px;
+  padding: 10px 20px 10px 20px;
+  flex: 50%; 
+}
+
+
+.introduction, #contact-form h1 {
+  color: #0F3635;
+
+}
+
+.contact-form {
+  flex: 40%;
+  max-width: 500px;
+  margin: 0px 50px 0px 50px;
+  line-height: 1.6;
+}
+
+#contact-form label {
+  padding-top: 10px;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 18px;
+}

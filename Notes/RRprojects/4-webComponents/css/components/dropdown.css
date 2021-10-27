@@ -1,0 +1,15 @@
+/* I wasn't able to change font colors, but could center things by editing the drop-down menu class */
+
+.dropdown-item {
+	box-shadow: none;
+	color: darkred;
+	font-weight: bold;
+}
+
+
+ .dropdown-menu {
+	text-align: center;
+	color: darkred;
+	font-weight: bold;
+}
+

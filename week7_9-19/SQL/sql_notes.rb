@@ -90,9 +90,9 @@ ORDER BY c.date ASC
 
 
 # https://sqliteonline.com/
-# File > Open DB > 
+# File > Open DB >
 
-#sqlite is one file on computer, so can just send it to someone 
+#sqlite is one file on computer, so can just send it to someone
 
 
 CREATE TABLE `cities` (
@@ -101,3 +101,15 @@ CREATE TABLE `cities` (
 );
 
 #  Can use .schema while in sql prompt
+
+
+SELECT patients.first_name, patients.last_name, doctor.first_name
+FROM patients
+JOIN consultations ON patients.id = consultations.patient_id
+JOIN doctors ON doctors.id = consultations.doctor_id
+WHERE doctors.first_name = "John"
+
+
+
+
+

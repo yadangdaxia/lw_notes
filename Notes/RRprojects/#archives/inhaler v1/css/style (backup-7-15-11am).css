@@ -1,0 +1,165 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+  padding-bottom: 200px;
+}
+
+ 
+.navigation {
+  height: 80px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+#logo img {
+  float: left;
+  height: 70px;
+  padding: 10px 0px 5px 30px;
+}
+
+.navigation ul {
+  float: right;
+  color: green;
+  font-size: 24px;
+  display: flex;
+  padding: 20px 32px 20px 32px;
+  height: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.navigation ul li {
+  list-style: none;
+  display: inline;
+}
+
+.navigation ul li a {
+  list-style: 80px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  transition-duration: 0.5s;
+}
+
+.navigation ul li a:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  height: 30px;
+}
+
+
+
+
+
+.hero-image {
+  background-image: url("../images/breatheman-lookright.jpg");
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+
+.hero-content {
+  padding-top: 200px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 140px;
+}
+
+.hero-content h1 {
+  color: red;
+  font-size: 60px;
+}
+
+
+
+
+
+.btn-view {
+  color: black;
+  background-color: white;
+  border: none;
+} 
+
+.btn-view:hover {
+  background-color: red;
+  color: black;
+}
+
+.btn-order {
+  background-color: white;  
+  color: #0F3635;
+  border: none;
+  float: left;
+}
+
+.btn-order:hover {
+  background-color: #0F3635;  
+  color: white;
+  border: none;
+}
+
+
+
+
+#products {
+  padding-top: 100px;
+  background-color: #90A2A1;
+  bottom: 0;
+}
+
+.products-container {
+  margin: 10px 50px 0px 50px;
+  background-color: #3D6664;
+}
+
+.product-box {
+  background-color: #ACECEA;
+  margin: 10px 50px 10px 50px;
+  padding: 2px 15px 10px 5px;
+  height: 280px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-description {
+  text-align: left;
+  padding: 10px 15px 10px 15px;
+  display: inline;
+  overflow: hidden;
+}
+
+.product-description h3 {
+  color: #255F5D;
+}
+
+.price p {
+  font-size: 32px;
+  font-family: "Times New Roman";
+  color: #255F5D;
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.product-image {
+  height: 280px;
+  padding: 20px;
+  float: right;
+}
+
+#contact {
+  height: 600px;
+  background-color: lightblue;
+  top: 0;
+}

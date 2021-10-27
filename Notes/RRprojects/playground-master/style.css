@@ -1,0 +1,93 @@
+/* fonts and colors */
+
+
+body {
+  background-color: rgb(240, 240, 240);
+  color: rgb(20, 20, 20);
+  line-height: 1;
+  margin: 0;
+  font-size: 20px;
+ 
+}
+
+h1 {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 90px;
+  color: red;
+}
+
+h2 {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 50px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+/* custom design */
+
+
+#banner {
+    background-image: url(https://picsum.photos/id/221/1800/600);
+    padding: 150px 0;
+    text-align: center;
+    color: white;
+
+}
+
+#banner h1 {
+  color: red;
+}
+
+#banner p {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.card {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(200, 200, 200);
+  height: 300px;
+  border-radius: 25%;
+ }
+
+.playclick hover {
+  color: white;
+}
+
+.container {
+
+}
+
+/*--- #footer {
+  position: absolute;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: black;
+ }
+---*/
+
+
+ #footer a {
+  color: grey;
+  font-size: 20px;
+
+ }
+
+  #footer a hover{
+  color: white;
+
+}

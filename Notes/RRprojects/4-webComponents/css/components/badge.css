@@ -1,0 +1,23 @@
+.badge {
+	line-height: 20px;
+	width: 20px;
+	padding: 0;
+	background: #3D21DA;
+	position: relative;
+	top: -15px;
+	left: -15px;
+}
+
+
+/* Long badge suitable for large avatars */
+
+.badge-long {
+	line-height: 22px;
+	padding: 4px;
+	color: white;
+	background: #3D21DA;
+	position: relative;
+	border-radius: 16px;
+	top: -50px;
+	left: -35px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI components sprint</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+
+
+<h1 class="text-center">UI Components List</h1>
+<p>Start thinking in terms of components.</p>
+
+
+<div class="container">
+    <h2>Avatar Design</h2>
+    <img src="http://placehold.it/50x50" alt="" class="avatar"> <!-- Note: placehold.it wasn't working for me, at least in Chrome, so I used Hopkins. -->
+    <img src="images/hopkins500.jpg" alt="" class="avatar-large">
+    <p>Hello, Clarice.</p>
+</div>
+
+
+<div class="container">
+  <h2>Button Design</h2>
+  <a href="#" class="btn btn-medium">Write</a>
+  <a href="#" class="btn btn-tweet">Tweet it.</a> 
+  <p>Here it is, Mr. Wonka!</p>
+</div>
+
+
+
+<div class="container">
+  <h2>Dropdown Design</h2>
+
+    <img src="images/hopkins500.jpg" alt="" class="avatar-large dropdown-toggle" id="navbar-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Login</a></li>
+    <li><a class="dropdown-item" href="#">Log out</a></li>
+    <li><a class="dropdown-item" href="#">Delete</a></li>
+  </ul>
+</div>
+
+    
+<div class="container">
+
+  <h2>Card design</h2>
+
+  <div class="row">
+
+    <div class="col-xs-12 col-md-4"> 
+      <div class="card">
+        <span class="card-category">POPULAR</span>
+        <div class="card-description">
+          <h3>Salad</h3>
+          <p>A healthy meal</p>
+        </div>
+        <img src="images/hopkins500.jpg" alt="" class="avatar card-image">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4"> 
+      <div class="card">
+        <span class="card-category">POPULAR</span>
+        <div class="card-description">
+          <h3>Salad</h3>
+          <p>A healthy meal</p>
+        </div>
+        <img src="images/hopkins500.jpg" alt="" class="avatar card-image">
+      </div>
+    </div>  
+
+
+    <div class="col-xs-12 col-md-4"> 
+      <div class="card">
+        <span class="card-category">POPULAR</span>
+        <div class="card-description">
+          <h3>Salad</h3>
+          <p>A healthy meal</p>
+        </div>
+        <img src="images/hopkins500.jpg" alt="" class="avatar card-image">
+      </div>
+    </div>
+
+
+    <div class="col-xs-12 col-md-4"> 
+      <div class="card">
+        <span class="card-category">POPULAR</span>
+        <div class="card-description">
+          <h3>Salad</h3>
+          <p>A healthy choice</p>
+        </div>
+        <img src="images/hopkins500.jpg" alt="" class="avatar card-image">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+
+  <h2>Badge Design</h2>
+
+  <img src="images/hopkins500.jpg" alt="" class="avatar">
+  <span class="badge">9</span>
+
+  <img src="images/hopkins500.jpg" alt="" class="avatar-large">
+  <span class="badge-long">4,216,289 hits</span>
+</div>
+
+
+ 
+ <!--- COME BACK TO THIS LATER 
+
+  <h2>Banner Design</h2>
+<div class="banner">
+  <img src="images/laundry.jpg" alt="">
+  <div class="banner-content">
+    <h1>Tofu</h1>
+    <p>A great source of protein</p>
+  </div>
+</div>
+
+--->
+
+
+    <div class="banner">
+        <div class="banner-content">
+          <h1>Tofu</h1>
+          <p>Full of protein</p>
+          <a href="#" class="btn-tweet">Eat some</a>
+        </div>
+    </div>
+
+
+
+
+<div class="container">
+  <h2>Tabs Design </h2>
+  <div class="tabs">
+    <div class="tabs-item">
+      <h3>75</h3>
+      <p>Upvoted</p>
+    </div>
+    <div class="tabs-item active"> <!-- I just wrote in the word active, will need some more coding to make it work though -->
+      <h3>75</h3>
+      <p>Upvoted</p>
+    </div>
+    <div class="tabs-item">
+      <h3>75</h3>
+      <p>Upvoted</p>
+    </div>    
+    <div class="tabs-item">
+      <h3>75</h3>
+      <p>Upvoted</p>
+    </div>
+  </div>
+
+
+
+<div class="container">
+  <h2>Product Design</h2> 
+
+
+  <div class="product">
+    <div class="product-upvotes">
+      <i class="fa fa-caret-up"></i>
+      <p>34</p>
+    </div>
+      <img src="http://unsplash.it/150/100/?random" alt="" class="product-image">
+      <div class="product-description">
+        <h3>Sweet Potatoes</h3>
+        <p>Orange, tasty, and healthy.</p>
+        <ul class="list-inline product-controls"> <!-- bootstrap class to make horizontal list -->
+          <li><a href=""><i class="fa fa-heart"></i></a></li> <!-- pulls icons from fontawesome -->
+          <li><a href=""><i class="fa fa-share"></i></a></li>
+          <li><a href=""><i class="fa fa-star"></i></a></li>
+        </ul>
+      </div>
+  </div> 
+  <div class="product">
+    <div class="product-upvotes">
+      <i class="fa fa-caret-up"></i>
+      <p>34</p>
+    </div>
+      <img src="http://unsplash.it/150/100/?random" alt="" class="product-image">
+      <div class="product-description">
+        <h3>Sweet Potatoes</h3>
+        <p>Orange, tasty, and healthy.</p>
+        <ul class="list-inline product-controls"> <!-- bootstrap class to make horizontal list -->
+          <li><a href=""><i class="fa fa-heart"></i></a></li> <!-- pulls icons from fontawesome -->
+          <li><a href=""><i class="fa fa-share"></i></a></li>
+          <li><a href=""><i class="fa fa-star"></i></a></li>
+        </ul>
+      </div>
+  </div> 
+  <div class="product">
+    <div class="product-upvotes">
+      <i class="fa fa-caret-up"></i>
+      <p>34</p>
+    </div>
+      <img src="http://unsplash.it/150/100/?random" alt="" class="product-image">
+      <div class="product-description">
+        <h3>Sweet Potatoes</h3>
+        <p>Orange, tasty, and healthy.</p>
+        <ul class="list-inline product-controls"> <!-- bootstrap class to make horizontal list -->
+          <li><a href=""><i class="fa fa-heart"></i></a></li> <!-- pulls icons from fontawesome -->
+          <li><a href=""><i class="fa fa-share"></i></a></li>
+          <li><a href=""><i class="fa fa-star"></i></a></li>
+        </ul>
+      </div>
+  </div> 
+  <div class="product">
+    <div class="product-upvotes">
+      <i class="fa fa-caret-up"></i>
+      <p>34</p>
+    </div>
+      <img src="http://unsplash.it/150/100/?random" alt="" class="product-image">
+      <div class="product-description">
+        <h3>Sweet Potatoes</h3>
+        <p>Orange, tasty, and healthy.</p>
+        <ul class="list-inline product-controls"> <!-- bootstrap class to make horizontal list -->
+          <li><a href=""><i class="fa fa-heart"></i></a></li> <!-- pulls icons from fontawesome -->
+          <li><a href=""><i class="fa fa-share"></i></a></li>
+          <li><a href=""><i class="fa fa-star"></i></a></li>
+        </ul>
+      </div>
+  </div> 
+
+</div>
+
+
+    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

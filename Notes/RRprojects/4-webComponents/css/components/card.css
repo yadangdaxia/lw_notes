@@ -1,0 +1,31 @@
+.card {
+	height: 300px;
+	color: white;
+	/*---  Below is a css gradient filter. There are probably other ways to do it. ---*/
+	background: linear-gradient(235deg, 
+		rgba(0, 0, 0, 0.8) 0%, 
+		rgba(0, 0, 0, 0.3) 50%),
+		url('https://picsum.photos/200/300');
+	background-size: cover;  /*---  Can just choose a properly sized image ---*/
+	position: relative;
+	margin: 20px;
+}
+
+
+.card-category {
+	position:  absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+.card-description {
+	position:  absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.card-image {
+	position:  absolute;
+	top: 10px;
+	right: 10px;
+}
