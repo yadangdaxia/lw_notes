@@ -1,0 +1,46 @@
+.city-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    padding: 16px;
+  }
+
+.centered-container {
+    text-align: center;
+}
+
+
+
+  @media(max-width: 992px) {
+    .city-cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+    @media(max-width: 768px) {
+    .city-cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+
+
+/*
+  NOTES
+
+@media(max-width: 768px) {
+.city-cards-container {
+  grid-template-columns: 1fr 1fr;
+}
+.main-container {
+  display: block;
+  or
+  flex-direction: column (?)
+}
+
+#map {
+  width: 100%
+  object-fit: cover (fixes distortion)
+}
+}

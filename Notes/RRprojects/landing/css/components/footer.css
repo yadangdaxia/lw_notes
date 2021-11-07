@@ -1,0 +1,13 @@
+.footer a {
+  font-size: 54px;
+  color: red;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.footer li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+}

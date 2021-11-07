@@ -1,0 +1,37 @@
+.hero {
+  height: 20vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.hero-content {
+  color: rgb(240, 229, 207);
+  text-align: center;
+  justify-content: center;
+
+}
+
+.hero-content h1 {
+  font-size: 88px;
+  margin-bottom: 0;
+  background: rgba(230, 0, 0, 0.6);
+  padding: 0 40px;
+}
+
+.hero-content h3 {
+  font-size: 28px;
+  margin-bottom: 78px;
+
+}
+
+.footer {
+  text-align: center;
+  padding: 60px;
+  background-color: #2c2b2b;
+}
