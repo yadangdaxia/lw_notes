@@ -24,6 +24,10 @@ git add .
 git commit -m "make my profile prettier"
 git push origin gh-pages
 
-token: 
+token: (use when updating to main)
+git add . 
+git commit -m "xx"
+git push origin main
+
 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
 
