@@ -5,11 +5,13 @@
     padding: 16px;
   }
 
-.centered-container {
-    text-align: center;
+.padded-container {
+  padding: 50px;
+  /* border: thin solid rgba(100, 100, 111); */
+  background-color: rgba(100, 100, 111, 0.4);
+  text-align: center;
+  line-height: normal;
 }
-
-
 
   @media(max-width: 992px) {
     .city-cards-container {

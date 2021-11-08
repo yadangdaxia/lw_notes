@@ -1,5 +1,4 @@
 
-
 const skateboard = document.querySelector('#skateboard');
 const flower = document.querySelector('#flower');
 const pony = document.querySelector('#pony');
@@ -27,6 +26,49 @@ pony.addEventListener('click', (e) => {
   let sound = new Audio('images/horse_noise.mp3')
   sound.play();
 });
+
+
+
+// Make the rest into functions like this one later. 
+const selectMultipleButtons = () => {
+  const buttons = document.querySelectorAll('.selectable')
+  buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      console.log(e);
+      e.target.classList.toggle('active')
+    });
+  });
+}
+selectMultipleButtons();
+
+
+const selectAllButtons = () => {
+  const reset = document.querySelector('#select-all')
+  // console.log(reset);
+  const buttons = document.querySelectorAll('.selectable')
+  reset.addEventListener('click', (e) => {
+    // console.log(e)
+    buttons.forEach((button) => {
+      button.classList.add('active')
+      });
+  });
+}
+selectAllButtons()
+
+const clearAllButtons = () => {
+  const reset = document.querySelector('#clear-all')
+  // console.log(reset);
+  const buttons = document.querySelectorAll('.selectable')
+  reset.addEventListener('click', (e) => {
+    // console.log(e)
+    buttons.forEach((button) => {
+      button.classList.remove('active')
+      });
+  });
+}
+clearAllButtons()
+
+
 
 heroButton.addEventListener('click', (e) => {
   console.log(e)
