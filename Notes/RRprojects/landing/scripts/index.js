@@ -103,3 +103,8 @@ console.dir(document);
 // document.title = "123"
 // console.log(document.all);
 // document.all[97].textContent = "hello"
+itemList = document.querySelector('#items');
+console.log(itemList)
+// itemList.parentNode.style.backgroundColor = 'blue';
+// itemList.children[1].style.backgroundColor = 'yellow';
+itemList.lastElementChild.textContent = "Hi I'm number 4"
