@@ -14,19 +14,17 @@
   color: rgb(240, 229, 207);
   text-align: center;
   justify-content: center;
-
 }
 
 .hero-content h1 {
   font-size: 88px;
-  margin-bottom: 0;
   background: rgba(230, 0, 0, 0.6);
   padding: 0 40px;
 }
 
 .hero-content h3 {
   font-size: 28px;
-  margin-bottom: 78px;
+  margin: 48px auto 48px auto;
 
 }
 

@@ -1,16 +1,18 @@
 
-.btn-blue {
+.button-blue {
   border-radius: 8px;
   background-color: rgb(75, 101, 135);
   padding: 12px;
   color: rgb(240, 229, 207);
   font-weight: bold;
   border: 4px solid rgb(240, 229, 207);
+  text-decoration: none;
 
   /* border-color: rgb(0, 60, 74); */
 }
-.btn-blue:hover {
+.button-blue:hover {
   background-color: rgb(46, 62, 83);
+  color: rgb(240, 229, 207);
 }
 
 #hidden-button {
@@ -21,15 +23,26 @@
   color: red;
 }
 
-.btn-treehouse {
+.button-treehouse {
   border-radius: 4px;
-  background-color: #6AD58B;
+  background-color: #35bc5f;
   padding: 12px;
+  margin: 8px;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #F0E5CF;
+  border: solid #F0E5CF;
+  border-radius: 4px;
+}
+.button-treehouse:hover {
+  color: #175129;
+  border: solid #175129;
+}
+.button-treehouse.active {
+  color: #175129;
+  border: solid #175129;
 }
 
-.btn-action {
+.button-action {
     border-radius: 50%;
     width: 100px;
     height: 100px;
