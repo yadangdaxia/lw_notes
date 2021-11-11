@@ -108,3 +108,26 @@ console.log(itemList)
 // itemList.parentNode.style.backgroundColor = 'blue';
 // itemList.children[1].style.backgroundColor = 'yellow';
 itemList.lastElementChild.textContent = "Hi I'm number 4"
+
+output = document.querySelector('#output')
+
+// console.log(e.offsetX)
+
+
+
+const box = document.getElementById('box');
+
+
+const colorChanger = (e) => {
+//box.style.backgroundColor = "rgb()"
+console.log('Event Type:', e.type);
+output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
+box.style.backgroundColor='rgb('+e.offsetX+', '+e.offsetY+', 255)'
+}
+
+box.addEventListener('mousemove', colorChanger);
+
+
+
+
+///

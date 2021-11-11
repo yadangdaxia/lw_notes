@@ -95,7 +95,7 @@
     <div class="city-card" style="background-image: url(images/vaccine.jpg)">
       Jabber
     </div>
-    <div class="city-card" style="background-image: url(images/umbrella.jpg)">
+    <div classmy-auto="city-card" style="background-image: url(images/umbrella.jpg)">
       Pisser
     </div>
     <div class="city-card" style="background-image: url(images/deer.jpg)">
@@ -165,25 +165,34 @@
 
 
 <div class="container mt-5 mb-5 pt-3 pb-3 bg-success text-dark bg-opacity-10">
-
   <h2 id="header-title" class="p-3">Write stuff down.</h2>
-
-  <div class="container">
-  <div id="main" class="card card-body">
-    <h3 class="title">Add Items</h3>
-    <form class="form-inline mb-3">
-      <input type="text" class="form-control mr-2">
-      <input type="submit" class="btn btn-dark mt-3" value="Submit">
-    </form>
-    <h3 class="title mt-3">Items</h3>
-    <ul id="items" class="list-group">
-      <li class="list-group-item list-group-item-action">a</li>
-      <li class="list-group-item list-group-item-action">b</li>
-      <li class="list-group-item list-group-item-action">c</li>
-      <li class="list-group-item list-group-item-action">d</li>
-    </ul>
+  <div class="container mt-2 mb-2">
+    <div id="main" class="card card-body">
+      <h3 class="title">Add Items</h3>
+      <form class="form-inline mb-3">
+        <input type="text" class="form-control mr-2">
+        <input type="submit" class="btn btn-dark mt-3" value="Submit">
+      </form>
+      <h3 class="title mt-3">Items</h3>
+      <ul id="items" class="list-group">
+        <li class="list-group-item list-group-item-action">a</li>
+        <li class="list-group-item list-group-item-action">b</li>
+        <li class="list-group-item list-group-item-action">c</li>
+        <li class="list-group-item list-group-item-action">d</li>
+      </ul>
+    </div>
   </div>
 
+  <div class="container mt-2 mb-2">
+    <div id="main" class="card card-body">
+      <p>Hover on the box to see the mouse coordinates. </p>
+      <div id="output">
+        <p>And make this sentence vanish.</p>
+      </div>
+      <div class="center" id="box" style="width:400px; height:200px; background: rgba(255, 217, 100, 0.3)">
+        <p class="center">Magical Color Changing!</p>
+      </div>
+    </div>
   </div>
 
 </div>
