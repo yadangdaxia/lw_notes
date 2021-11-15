@@ -33,5 +33,9 @@ Q:
 How to not have to generate new token each time I push from one computer? 
 https://github.com/settings/tokens
 
+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
+
+
+
 
 
