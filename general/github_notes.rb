@@ -3,7 +3,7 @@
 git init
 git add .
 git commit -m "my profile page"
-gh repo create # this creates the associated repo on Github!
+gh repo create # this creates the associated repo on Github! Can actually commit before creating this and files will stay "committed" 
 
 # To open the Github repo from your browser you can run:
 
@@ -29,5 +29,9 @@ git add .
 git commit -m "xx"
 git push origin main
 
-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
+Q: 
+How to not have to generate new token each time I push from one computer? 
+https://github.com/settings/tokens
+
+
 
