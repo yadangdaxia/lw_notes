@@ -98,25 +98,21 @@ selectMultipleButtons();
 // DOM MANIPULATION
 
 // Look at all the properties in the document
-console.dir(document);
+// console.dir(document);
 // Change the title
 // document.title = "123"
 // console.log(document.all);
 // document.all[97].textContent = "hello"
-itemList = document.querySelector('#items');
-console.log(itemList)
+// itemList = document.querySelector('#items');
+// console.log(itemList)
 // itemList.parentNode.style.backgroundColor = 'blue';
 // itemList.children[1].style.backgroundColor = 'yellow';
-itemList.lastElementChild.textContent = "Hi I'm number 4"
-
-output = document.querySelector('#output')
-
-// console.log(e.offsetX)
+//itemList.lastElementChild.textContent = "Hi I'm number 4"
+// output = document.querySelector('#output')
 
 
 
 const box = document.getElementById('box');
-
 
 const colorChanger = (e) => {
 //box.style.backgroundColor = "rgb()"
@@ -129,5 +125,55 @@ box.addEventListener('mousemove', colorChanger);
 
 
 
+const form = document.getElementById('add-form')
+const itemList = document.getElementById('items')
 
-///
+
+
+
+// Add item
+const addItemToList = (e) => {
+  e.preventDefault();
+  const newInput = document.getElementById('input').value;
+  console.log(newInput)
+  // Create new li element
+  const li = document.createElement('li');
+  // Add class
+  li.className = 'list-group-item list-group-item-action';
+  // Add text node with input value
+  li.appendChild(document.createTextNode(newInput));
+  
+  // Create HTML button to delete
+  const deleteBtn = document.createElement('button');
+  // Add classes to delete button
+  deleteBtn.className = 'btn btn-warning btn-sm float-right delete';
+  // Append text node
+  deleteBtn.appendChild(document.createTextNode('X'));
+  // Append button to li
+  li.appendChild(deleteBtn);
+
+  // Append li to list
+  itemList.appendChild(li)
+}
+
+// Remove item
+const deleteItemFromList = (e) => {
+  //const item = document.getElementById
+  const deleteBtn = document.querySelectorAll('.btn-warning')
+  console.log(deleteBtn);
+    deleteBtn.addEventListener('click', (e) => {
+      console.log("hi");
+      e.target.innerText = "C345"
+  })
+
+
+}
+
+//if(e.target.classList.contains('delete'))
+
+// Events
+form.addEventListener('submit', addItemToList);
+
+
+
+
