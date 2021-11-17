@@ -78,3 +78,46 @@ Restaurant.all
 crimson = Article.new(title: "Hello Rails", body: "I am on Rails!")
 crimson.save
 
+
+#  BARS
+
+# app/views/bar/new.html.erb
+<%= render 'form', bar: @bar %>
+<%# <%= link_to 'Back', bars_path %> %>
+<h1>Add a New Bar</h1>
+
+
+# app/views/bars/index/html.erb
+<h1> Bars index page </h1>
+
+<ul>
+  <% @bars.each do |bar| %>
+    <li><%= bar.name %></li>
+  <% end %>
+</ul>
+
+#app/views/bars/show.html.erb
+<h2><%= @bar.name %></h2>
+<p><%= @bar.address %></p>
+<p><%= @bar.beers %></p>
+
+# app/controllers/barscontroller.rb
+class BarsController < ApplicationController
+    def index
+        @bars = Bar.all
+    end
+    def new
+        @bars = Bar.new
+    end
+    def show
+        @bar = Bar.find(params[:id])
+    end
+end
+
+# config/routes.rb
+Rails.application.routes.draw do
+  resources :bars
+  root to: 'bars#index'
+end
+
+
