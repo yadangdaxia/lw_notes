@@ -1,9 +1,12 @@
 
 #NOTES FROM LIVE CODE: 
+rails new first-rails-app --skip-active-storage --skip-action-mailbox
+
 
 # Create model in command line:
 rails g model task title details completed:boolean
 # Don't need to add data type for title and details; they are string by default
+# This creates models/task.rb and db/migrate file. Still need to create own controller and define routes
 
 rails c
 # In console: (IRB)
@@ -11,6 +14,7 @@ Task.count
 Task.new(title: "do homework", details: "don't forget to proofread")
 # id will be nil, since it is not in db but only in memory
 # Exit irb (type exit)
+Bar.new(name: 'rusty nail', address: '123 rusty drive', beers: 'IPA', rating: '5')
 
 # Create controller in command line
 rails g controller tasks
@@ -23,14 +27,9 @@ rails g controller tasks
 
 # config/routes.rb
 
-
 # views/tasks/index.html.erb
 
-
 # views/tasks/index.html.erb
-
-
-
 
 # In command line:
 rails s
@@ -159,7 +158,7 @@ Destroy a restaurant
 # config/routes.rb
 
 Rails.application.routes.draw do 
-  resources: restaurants
+  resources :restaurants
 end
 
 # resources:restaurants essentially does this: 

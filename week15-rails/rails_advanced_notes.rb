@@ -59,6 +59,12 @@ rails g simple_form:install --bootstrap
 
 rails g scaffold name:string address:string rating:integer
 #Note: scaffold adds extra stuff ~ 
+
+
+
+
+
+
 rails db:migrate
 
 # Can add seeds in seedfile
@@ -68,3 +74,7 @@ rails db:seed
 rails c
 Restaurant.count
 Restaurant.all
+
+crimson = Article.new(title: "Hello Rails", body: "I am on Rails!")
+crimson.save
+
