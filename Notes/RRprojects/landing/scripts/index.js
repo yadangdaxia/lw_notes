@@ -112,22 +112,11 @@ selectMultipleButtons();
 
 
 
-const box = document.getElementById('box');
-
-const colorChanger = (e) => {
-//box.style.backgroundColor = "rgb()"
-console.log('Event Type:', e.type);
-output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
-box.style.backgroundColor='rgb('+e.offsetX+', '+e.offsetY+', 255)'
-}
-
-box.addEventListener('mousemove', colorChanger);
 
 
 
 const form = document.getElementById('add-form')
 const itemList = document.getElementById('items')
-
 
 
 
@@ -142,7 +131,6 @@ const addItemToList = (e) => {
   li.className = 'list-group-item list-group-item-action';
   // Add text node with input value
   li.appendChild(document.createTextNode(newInput));
-  
   // Create HTML button to delete
   const deleteBtn = document.createElement('button');
   // Add classes to delete button
@@ -151,7 +139,6 @@ const addItemToList = (e) => {
   deleteBtn.appendChild(document.createTextNode('X'));
   // Append button to li
   li.appendChild(deleteBtn);
-
   // Append li to list
   itemList.appendChild(li)
 }
@@ -165,15 +152,29 @@ const deleteItemFromList = (e) => {
       console.log("hi");
       e.target.innerText = "C345"
   })
-
-
 }
-
-//if(e.target.classList.contains('delete'))
 
 // Events
 form.addEventListener('submit', addItemToList);
 
 
+//if(e.target.classList.contains('delete'))
 
 
+
+
+
+
+
+// COLOR CHANGER
+
+const box = document.getElementById('box');
+
+const colorChanger = (e) => {
+//box.style.backgroundColor = "rgb()"
+console.log('Event Type:', e.type);
+output.innerHTML = '<h3>MouseX: '+e.offsetX+'</h3><h3>MouseY: '+e.offsetY+'</h3>';
+box.style.backgroundColor='rgb('+e.offsetX+', '+e.offsetY+', 255)'
+}
+
+box.addEventListener('mousemove', colorChanger);
