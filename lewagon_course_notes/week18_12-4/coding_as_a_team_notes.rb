@@ -55,13 +55,11 @@ git diff master home-title
 # Can also make comments to code
 # If change is needed, communicate to developer and have him make change.
 
-
 # After branch has been merged (or whenever done with it), return to master file:
 git checkout master # (git co master for short)
 # Master will not be updated.
 git pull origin master
 # Updates your files
-
 
 
 # ADDITIONAL COMMANDS

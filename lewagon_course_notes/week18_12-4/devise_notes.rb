@@ -83,3 +83,6 @@ rails generate devise:views
 
 # views>devise>sessions>new.html.erb
 # Style form here in HTML
+
+git branch
+# lists branches
