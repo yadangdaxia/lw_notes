@@ -33,8 +33,6 @@ https://github.com/lewagon/setup
 
 
 
-
-
 # GITHUB PAGES
 
 # Github Pages is a sub-service of Github that makes it easy
